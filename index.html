@@ -5,18 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOOD COURT</title>
+    <link rel="stylesheet" href="./app.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <section>
-        <article>
-            <aside>
+    <section id="mainsection">
+        <article id="mainarticle">
+            <aside class="aside1">
                 <h1>Food Order</h1>
                 <form action="">
-                    <input type="text" placeholder="Enter Name">
-                    <br><br>
-                    <input type="radio" name="veg" id="veg">VEG
-                    <input type="radio" name="veg" id="veg">NON-VEG
+                    <div>
+                        <input type="text" placeholder="Enter Name">
+                    </div>
+
+                    <div>
+                        <input type="radio" name="veg" id="veg">VEG
+                        <input type="radio" name="veg" id="veg">NON-VEG
+                    </div>
+                    
+                    <div>
+                        <select name="" id="">
+                            <option value="">Select the Category</option>
+                            <option value="veg">VEG</option>
+                            <option value="non-veg">NON-VEG</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="number" id="quantity" placeholder="Enter the Quantity">
+                    </div>
+                    
+                    <div>
+                        <textarea name="address" placeholder="Enter the Address" id="address" cols="22" rows="10"></textarea>
+                    </div>
+                    
+                    <div>
+                        <select name="state" id="state">
+                            <option value="">Select the State</option>
+                            <option value="karnataka">karnataka</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="hassan">Hassan</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                    
                 </form>
+            </aside>
+            <aside class="aside2">
+                <caption>Check out</caption>
+                    <table border>
+                        <tr>
+                            <td>Order no.</td>
+                            <td colspan="2">Name</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            
+                        </tr>
+                    </table>
             </aside>
         </article>
     </section>
